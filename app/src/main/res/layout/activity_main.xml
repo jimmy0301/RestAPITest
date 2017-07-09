@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codepath.getmember.activities.MainActivity">
+
+   <TextView
+       android:id="@+id/tvName"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Name:"
+       android:layout_marginTop="144dp"
+       android:layout_alignLeft="@+id/tvPwd"
+       android:layout_marginRight="19dp"
+       android:layout_marginEnd="19dp"/>
+
+   <EditText
+       android:layout_alignStart="@+id/etPwd"
+       android:layout_alignLeft="@+id/etPwd"
+       android:layout_alignBottom="@+id/tvName"
+       android:layout_alignBaseline="@+id/tvName"
+       android:id="@+id/etName"
+       android:hint="Name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <TextView
+       android:id="@+id/tvPwd"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Password:"
+       android:layout_marginTop="54dp"
+       android:layout_below="@+id/tvName"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:layout_marginLeft="101dp"
+       android:layout_marginStart="101dp"/>
+
+   <EditText
+       android:id="@+id/etPwd"
+       android:inputType="textPassword"
+       android:hint="Password"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="11dp"
+       android:layout_marginStart="11dp"
+       android:layout_alignBaseline="@+id/tvPwd"
+       android:layout_alignBottom="@+id/tvPwd"
+       android:layout_toRightOf="@+id/tvPwd"
+       android:layout_toEndOf="@+id/tvPwd"/>
+
+   <Button
+       android:id="@+id/btnSubmit"
+       android:text="Submit"
+       android:layout_marginTop="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@id/etPwd"
+       android:layout_below="@id/etPwd"/>
+
+</RelativeLayout>
